@@ -24,7 +24,6 @@ Este predicado de aridad 0 se encarga de mostrar todos los hechos mostro/4 que s
 ### 3. Predicados de Modificación Dinámica y Gestión
 Para permitir la gestión dinámica de la base de conocimiento por parte del usuario, se utiliza la directiva :- dynamic mostro/4..
 
-
 ### 4. Función Agregar Monstruo: `agregarMostro/0`
 Este predicado permite al usuario ingresar dinámicamente una nueva carta mostro/4. Para evitar problemas de sintaxis con paréntesis en la consola, el predicado solicita los datos paso a paso (Nombre, Nivel, Atributo, Poder). Utiliza el predicado read/1 para capturar cada valor y, finalmente, assertz/1 para agregar el nuevo hecho al final de la base de conocimiento dinámica. Incluye validación de tipos de datos.
 
